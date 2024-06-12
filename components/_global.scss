@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video__loob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: start;
+  position: relative;
+}
+.section--with-bg {
+  padding: 5rem 0;
+}
+.section--with-bg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: var(--color-grey);
+  justify-self: center;
+  z-index: -1;
+}
+.h2-heading {
+  font-size: 50px;
+  font-weight: var(--font-weight-bold);
+  grid-column: 1/-1;
+  margin-bottom: 4.7rem;
+  text-transform: uppercase;
+}
