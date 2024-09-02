@@ -2,213 +2,353 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohamed Salah</title>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Mohamed Salah</title>
   </head>
+
   <body>
-<!-- --------------------------------------------------------------------->
     <div class="container">
-      <video class="video__loob" autoplay loop muted>
-        <source src="video-loop.mp4" type="video/mp4">
+      <video class="video-loop" autoplay loop muted>
+        <source src="./video-loop.mp4" type="video/mp4" />
       </video>
+
       <header class="header">
-        <label class="burger-menu" for="menu">
+        <label for="menu" class="burger-menu">
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
           <div class="burger-menu__bar"></div>
         </label>
-        <input id="menu" class="burger-menu__checkbox" type="checkbox">
-        <nav class="navegation">
-          <ul class="navegation__list">
-            <li><a class="navegation__link navegation__bio" href="#bio">Bio</a></li>
-            <li><a class="navegation__link navegation__skills" href="#skills">Skills</a></li>
-            <li><a class="navegation__link navegation__projects" href="#projects">Projects</a></li>
-            <li><a class="navegation__link navegation__clients" href="#clients">My Clientes</a></li>
-            <li><a class="navegation__link navegation__contact" href="#contact">Contact</a></li>
+
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a class="navigation__link navigation__bio" href="#bio">Bio</a>
+            </li>
+            <li>
+              <a class="navigation__link navigation__skills" href="#skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__media" href="#media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__projects" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__clients" href="#clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link navigation__contact" href="#contact"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
-        <div class="toggele">
-          <h3 class="toggele__titel">Switch Theme</h3>
-          <input
-            type="checkbox"
-            name="toggele Checkbox"
-            id="toggele"
-            class="toggele__checkbox"
-          />
-          <label for="toggele" class="toggele__label"></label>
+
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input id="toggle" class="toggle__checkbox" type="checkbox" />
+          <label
+            class="toggle__label"
+            for="toggle"
+            role="button"
+            tabindex="0"
+          ></label>
         </div>
       </header>
-<!-- ----------------------------------------------------------------- -->
-      <section id="bio" class="bio section ">
+
+      <section id="bio" class="section bio">
         <div class="bio__data">
           <h1 class="bio__heading">
             Hi Theare , I'm A passionate Frontend Developer
           </h1>
-
-          <p class="bio__objectev">
-            My name is <span class="bio__name">Mohamed alah</span>, I learned
+          <p class="bio__objective">
+            My name is <span class="bio__name">Mohamed Salah</span>, I learned
             from
-            <a href="http://www.almdrasa.com" class="bio__almdrasa"
+            <a class="bio__almdrasa" href="https://www.almdrasa.com/"
               >Almdrasa.com</a
-            >
-            I working in the field of Front-end Development. Here are my social
-            media link:
+            >, I working in the field of Front-end Development. Here are my
+            social media links:
+            <a class="bio__facebook" href=""https://www.facebook.com/profile.php?id=100039882259434&amp;mibextid=ZbWKwL""
+              >Facebook</a
+            >,
+
             <a
               class="bio__linkedin"
-              href="https://www.linkedin.com/in/moahamed-salah-43b270307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              >Linkedin</a
-            >,<a class="bio__githup" href="https://github.com/Mohamedssalah"
-              >GitHup</a
+              href="https://www.linkedin.com/in/moahamed-salah-43b270307?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+              >LinkedIn</a
             >
             and
             <a
-              class="bio__facebook"
-              href="https://www.facebook.com/profile.php?id=100039882259434&mibextid=ZbWKwL"
-              >Facebook</a
-            >
+              class="bio__githup"
+              href="https://github.com/Mohamedssalah"
+              >GitHup</a
+            >.
           </p>
-
-          <a href="#contact" class="bio__links say-hi-link">
-            Say Hi
-          </a>
-          <a href="./Resumewithme.pdf" class="bio__links find-out-link">
+          <a class="bio__links say-hi-link" href="#contact">Say Hi</a>
+          <a
+            class="bio__links find-out-link"
+            href="./Resume Frontend.pdf"
+          >
             Download CV <span class="bio__arrow">↓</span>
           </a>
         </div>
-        <div class="bio__pic--content">
+        <div class="bio__pic-content">
           <img
             class="bio__pic"
             src="./images/1708271664246-removebg.png"
-            alt="image of Mohamed Salah"
+            alt="personal pic of Mohamed Abusrea"
           />
         </div>
       </section>
-<!-- ----------------------------------------------------------------------- -->
-      <section id="skills" class="skills section  section--with-bg" >
-        <h2 class="h2-heading">Skills:</h2>
-        <ul class="skills__list">
-          <li class="skills__item">
-            <h2 class="skills__titel">HTML</h2>
-            <span class="skills__years">1 Years</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__titel">CSS</h2>
-            <span class="skills__years">1 Years</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__titel">Javascript</h2>
-            <span class="skills__years">6 month</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__titel">React</h2>
-            <span class="skills__years">4 month</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__titel">Redux</h2>
-            <span class="skills__years">4 month</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__titel">React testing library</h2>
-            <span class="skills__years">3 month</span>
-          </li>
-        </ul>
-        </ul>
-      </section>
-<!-- --------------------------------------------------------------------------- -->
-      <section id="projects" class="projects  ">         
-          <h1 class="h2-heading">
-            MY FEATURED <br> PROJECTS
-          </h1>
 
-        <section class="projects__part">
-          <img class="projects__pic" src="./images/project-1.jpg" alt="">
-          <div class="projects__data" >          
-          <h2 class="h3-heading">Quran Tap <br> Extension</h2>
-          <p class="projects__description">Quran Tab is an Islamic new tab page that will keep you inspired by a verse from the Quran every time you open a new tab that helps you achieve your "Khatma" and keeps you connected with the words of Allah.</p>
-          <nav class="projects__links">
-            <ul class="projects__lest">
-              <li ><a class="projects__link"  href="http://bit.ly/qt-chroom" target="_blank">Chrome Link</a></li>
-              <li  ><a class="projects__link"  href="http://bit.ly/qt-edge" target="_blank">- Edge Link</a></li>
-            </ul>
-          </nav>
-        </div>
-        </section>
-
-        <section class="projects__part">
-          <div class="projects__data" >          
-            <h2 class="h3-heading">Quran Station<br> Extension</h2>
-            <p class="projects__description">Small extension that gives you access to over 100 stations to help you listen to the Quran from your favorite reciters easily Quran-Station has over 100 stations to help you listen to the Quran from your favorite reciters in a quick and easy way.</p>
-            <nav class="projects__links">
-              <ul class="projects__lest">
-                <li ><a class="projects__link "  href="http://bit.ly/qt-chroom">Chrome Link</a></li>
-                <li ><a class="projects__link"  href="http://bit.ly/qt-firefox">- Firefox Link</a></li>
-                <li  ><a class="projects__link"  href="http://bit.ly/qt-edge">- Edge Link</a></li>
-              </ul>
-            </nav>
-          </div>
-          <img class="projects__pic projects__pic2" src="./images/project-2.jpg" alt="">
-        </section>
+      <section id="skills" class="section skills section--with-bg">
+        <h2 class="h2-heading">Skills</h2>
+        <div class="skills__filters">
+          <button
+            class="skills__button skills__button--isActive"
+            data-type="all"
+          >
+            All
+          </button>
+          <button class="skills__button" data-type="frontend">Frontend</button>
+          <button class="skills__button" data-type="backend">Backend</button>
+        </div> 
+        <!-- <ul class="skills__list">
+          <li data-name="HTML" class="skills__column">
+            <h2 class="skills__title">HTML</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li data-name="CSS" class="skills__column">
+            <h2 class="skills__title">CSS</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li data-name="Javascript" class="skills__column">
+            <h2 class="skills__title">Javascript</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li data-name="React" class="skills__column">
+            <h2 class="skills__title">React</h2>
+            <span class="skills__years">4 years</span>
+          </li>
+          <li data-name="Redux" class="skills__column">
+            <h2 class="skills__title">Redux</h2>
+            <span class="skills__years">3 years</span>
+          </li>
+          <li data-name="React testing library" class="skills__column">
+            <h2 class="skills__title">React testing library</h2>
+            <span class="skills__years">1 year</span>
+          </li>
+        </ul>  -->
       </section>
-      <!-- --------------------------------------------------------- -->
-      <section id="clients" class="clients section section--with-bg">
+
+
+      <section id="projects" class="section projects">
         <h2 class="h2-heading">
-          Whts My <br>Clients Says
+          MY FEATURED <br />
+          PROJECTS
         </h2>
+        <div class="projects__main">
+          <img
+            class="projects__img responsive-img"
+            src="./images/project-1.jpg"
+            alt="Quran Tab Extension"
+          />
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Quran Tab <br />
+              Extension
+            </h3>
+            <p class="projects__description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <a
+              class="projects__link"
+              href="https://bit.ly/qt-chrome"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>-</span>
+            <a
+              class="projects__link"
+              href="https://bit.ly/qt-edge"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
 
+          <div class="projects__data">
+            <h3 class="h3-heading">
+              Quran Station <br />
+              Extension
+            </h3>
+            <p class="projects__description">
+              Small extension that gives you access to over 100 stations to help
+              you listen to the Quran from your favorite reciters easily
+              Quran-Station has over 100 stations to help you listen to the
+              Quran from your favorite reciters in a quick and easy way.
+            </p>
+            <a
+              class="projects__link"
+              href="https://bit.ly/qs-chrome"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>-</span>
+            <a
+              class="projects__link"
+              href="https://bit.ly/qs-firefox"
+              target="_blank"
+              >Firefox Link</a
+            >
+            <span>-</span>
+            <a
+              class="projects__link"
+              href="https://bit.ly/quran-station-edge"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+          <img
+            class="projects__img responsive-img"
+            src="./images/project-2.jpg"
+            alt="Quran Tab Extension"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="section clients section--with-bg">
+        <h2 class="h2-heading">
+          What My <br />
+          Clients Says.
+        </h2>
+        <!-- <div class="clients__arrows"> -->
+        <!-- <img class="clients__arrow" src="./images/left-arrow.png" width="80" alt="left arrow">
+        <img class="clients__arrow" src="./images/right-arrow.png" width="80" alt="right arrow"> -->
+      <!-- </div> -->
         <div class="clients__opinions">
           <div class="clients__wrapper">
             <p class="clients__opinion">
-              Mohamed has the advantageous ability to understand a problem and implement code to a high standard within the deadline. Each project we have worked on, I know I can completely trust Abusrea to own his tasks and complete what is needed when asked of him.
+              Mohamed Salah has the advantageous ability to understand a problem and
+              implement code to a high standard within the deadline. Each
+              project we have worked on, I know I can completely trust Abusrea
+              to own his tasks and complete what is needed when asked of him.
             </p>
-            <p class="clients__opinion"> 
-              and implement code to a high standard within the deadline. Each project we have worked on, I know I can completely trust Abusrea to own his tasks and complete what is needed when asked of him.
-              Mohamed will patiently listen to you and give you his own Ideas as well, and in the end, he comes up with something completely different from what you’re expecting, but the good news is, you’ll always love it.
+            <p class="clients__opinion">
+              Mohamed will patiently listen to you and give you his own Ideas as
+              well, and in the end, he comes up with something completely
+              different from what you’re expecting, but the good news is, you’ll
+              always love it.
             </p>
-            <p class="clients__opinion"> 
-              different from what you’re expecting, but the good news is, you’ll always love it.
-              I had a chance to work closely with Mohamed as a direct manager from hist first day at DeliveryHero until my last day there (6+months). Mohamed's biggest strengths that I admire are taking initiatives on personal and team level, and driving them.
+            <p class="clients__opinion">
+              I had a chance to work closely with Mohamed as a direct manager
+              from hist first day at DeliveryHero until my last day there
+              (6+months). Mohamed's biggest strengths that I admire are taking
+              initiatives on personal and team level, and driving them.
             </p>
           </div>
         </div>
       </section>
-      <!-- ---------------------------------------------------------- -->
-      <section id="contact" class="contact section">
+
+      <section id="contact" class="section contact">
         <div>
           <p class="contact__description">
-            Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time zones away.
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
           </p>
-          <a href="mailto:moahemsalah4@gmail.com" class="contact__email">moahemsalah4@gmail.com</a>
+
+          <a href="mailto: moahamedsalah4@gmail.com" class="contact__email"
+            >moahamedsalah4@gmail.com</a
+          >
+
           <div class="contact__socials">
-            <a href="https://www.facebook.com/profile.php?id=100039882259434&mibextid=ZbWKwL" class="contact__social">
-              <img src="./images/brand/facebook.svg" alt="">
+              <a class="contact__social" href="https://www.facebook.com/profile.php?id=100039882259434&mibextid=ZbWKwL">
+              <img src="./images/brand/facebook.svg" alt="facebook" />
             </a>
-            <a href="https://www.linkedin.com/in/moahamed-salah-43b270307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact__social">
-              <img src="./images/brand/LinkedIn.svg" alt="">
+            <a class="contact__social" href="#">
+              <img src="./images/brand/twitter.svg" alt="twitter" />
             </a>
-            <a href="https://github.com/Mohamedssalah" class="contact__social">
-              <img src="./images/brand/github.svg" alt="">
+            <a class="contact__social" href="#">
+              <img src="./images/brand/youtube.svg" alt="youtube" />
+            </a>
+            <a class="contact__social" href="https://github.com/Mohamedssalah">
+              <img src="./images/brand/github.svg" alt="github" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./images/brand/instagram.svg" alt="instagram.svg" />
+            </a>
+            <a class="contact__social" href="https://www.linkedin.com/in/moahamed-salah-43b270307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <img src="./images/brand/LinkedIn.svg" alt="LinkedIn.svg" />
             </a>
           </div>
         </div>
-        <div>
-          <h2 class="h2-heading">
-            LET’S WORK <br>
-            TOGETHER!
-          </h2>
 
+        <div class="contact__formContent">
+          <h2 class="h2-heading">
+            Let’s Work <br />
+            Together!
+          </h2>
           <form action="results.html">
             <div class="contact__inputs">
-              <input type="text" class="contact__input" name="fullName" placeholder="Full Name" required>
-              <input type="tel" class="contact__input" name="telephone" placeholder="Phoon No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+              <input
+                type="text"
+                class="contact__input"
+                name="name"
+                placeholder="Full Name"
+                required
+              />
+              <!-- <input type="email" class="contact__input" placeholder="Email" required /> -->
+              <input
+                type="tel"
+                class="contact__input"
+                placeholder="Phone No."
+                name="tel"
+                required
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
             </div>
-            <textarea class="contact__input contact__textarea" name="description" id="discription" rows="1" placeholder="You'r Massage" required></textarea>
-            <input class="contact__button" type="submit" value="Send Massage">
+            <textarea
+              class="contact__input contact__textarea"
+              name="message"
+              placeholder="Your Message"
+              rows="1"
+              required
+            ></textarea>
+            <input type="submit" class="contact__button" value="Send Message" />
           </form>
         </div>
       </section>
 
       <footer class="footer">© 2024 by Mohamed Salah</footer>
     </div>
+    <!-- <script src="./script.js"></script> -->
+     <!-- <script src="./chaling_1.js"></script> -->
+     <!-- <script src="./events.js"></script> -->
+      <!-- <script src="arrycallbackmethuds.js"></script> -->
+      <script src="Script.js"></script>
   </body>
 </html>
+
